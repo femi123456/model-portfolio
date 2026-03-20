@@ -3,19 +3,19 @@ import { motion, useScroll, useTransform } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
 
 export const Hero = () => {
-  const { scrollYProgress } = useScroll();
-  
-  const textY = useTransform(scrollYProgress, [0, 0.2], [0, -100]);
-  const photoOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
-  const photoScale = useTransform(scrollYProgress, [0, 0.3], [1, 0.85]);
-  const chevronOpacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
+  const { scrollY } = useScroll();
+
+  const textY = useTransform(scrollY, [0, 500], [0, -100]);
+  const photoOpacity = useTransform(scrollY, [0, 400], [1, 0]);
+  const photoScale = useTransform(scrollY, [0, 400], [1, 0.85]);
+  const chevronOpacity = useTransform(scrollY, [0, 200], [1, 0]);
 
   return (
-    <section id="home" className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen pt-24 pb-12 w-full flex flex-col items-center justify-center overflow-hidden">
       {/* Parallax Background Text */}
-      <motion.h2 
+      <motion.h2
         style={{ y: textY }}
-        className="absolute inset-0 flex items-center justify-center font-display text-[20vw] text-brown opacity-[0.04] pointer-events-none select-none"
+        className="absolute inset-0 flex items-center justify-center font-display text-[20vw] text-brown opacity-[0.04] pointer-events-none select-none mt-16"
       >
         MODEL
       </motion.h2>
@@ -29,14 +29,14 @@ export const Hero = () => {
           src="https://images.unsplash.com/photo-1618886614638-80e3c103d31a?w=1200&q=80"
           alt="Julian Vane"
           referrerPolicy="no-referrer"
-          className="w-full h-auto max-h-[75vh] object-contain grayscale contrast-125 brightness-90 mix-blend-luminosity"
+          className="w-full h-auto max-h-[65vh] object-contain grayscale contrast-125 brightness-90 mix-blend-luminosity"
         />
-        
+
         <div className="mt-8 text-center">
           <h1 className="font-serif text-[clamp(2.5rem,6vw,5.5rem)] uppercase tracking-[0.15em] leading-none">
             Julian <span className="text-gold italic">Vane</span>
           </h1>
-          
+
           <div className="flex flex-col items-center mt-4">
             <div className="w-[60px] h-[1px] bg-gold mb-4" />
             <p className="font-sans text-[0.65rem] uppercase tracking-[0.4em] text-brown">
