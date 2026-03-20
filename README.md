@@ -1,20 +1,29 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🖤 Model Portfolio
 
-# Run and deploy your AI Studio app
+A cinematic, high-fashion model portfolio website built with bold editorial aesthetics — black, warm white, and brown — with immersive scroll-driven animations, 3D effects, and a custom cursor experience.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/3d148593-2cd4-4eb3-9dc6-2e7a6016b7f8
+## ✨ Features
 
-## Run Locally
+- Single-page scrollable layout with smooth anchor navigation
+- Scroll-driven animations — elements fade, scale, and transform as you scroll
+- Hero photo dissolves as you scroll away
+- Glassmorphic navbar
+- Custom gold cursor that expands on hover
+- Subtle film grain texture across the entire site
+- 3D card tilt on gallery and contact cards
+- Masonry photo gallery on a separate route
+- Animated stats counter on scroll
+- Draggable horizontal reel strip
+- Booking enquiry form with success state
+- Social contact section — WhatsApp, Instagram, TikTok, Twitter/X
+- Back-to-top button
+- Fully responsive for mobile
+- Cinematic page transitions
 
-**Prerequisites:**  Node.js
+---
 
+## 🛠 Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+React · Vite · Framer Motion · Tailwind CSS · React Router · Google Fonts
